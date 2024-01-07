@@ -1,6 +1,10 @@
+package calc;
+
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
+
 
 public class Main
 {
@@ -47,20 +51,24 @@ public class Main
     }
 
 
-    public static int arabicNumbersCalculator(int first, int second, char op)
+    public static int arabicNumbersCalculator(int first, int second, char oper)
     {
         int resultOfCalc = 0;
 
-        switch (op)
+        switch (oper)
         {
             case '+':
                 resultOfCalc =  first + second;
+                break;
             case '-':
                 resultOfCalc = first - second;
+                break;
             case '*':
                 resultOfCalc = first * second;
+                break;
             case '/':
                 resultOfCalc = first / second;
+                break;
         }
         return resultOfCalc;
     }
