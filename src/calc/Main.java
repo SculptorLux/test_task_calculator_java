@@ -3,11 +3,16 @@ package calc;
 
 public class Main
 {
-    //Класс для метода calc
-    public static String calc(String input)
+    public static String calc(String input) throws Exception
     {
-
-        return ArithmeticOperetions.calculate(input);
+        InputCheck.stringsSplit(input);
+        return Integer.toString(ArithmeticOperetions.calculate
+                (
+                InputCheck.firstInt,
+                InputCheck.secondInt,
+                InputCheck.operator
+                )
+        );
     }
 }
 
