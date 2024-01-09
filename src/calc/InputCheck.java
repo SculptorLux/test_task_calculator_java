@@ -12,7 +12,7 @@ public class InputCheck {
         String[] strings = string.split("[+-/*]");
         if (strings.length != 2)
         {
-            throw new Exception("Неверный ввод");
+            throw new Exception("Неверный ввод - максимум 2 операнды");
         }
 
         firstInt = strings[0].trim();
