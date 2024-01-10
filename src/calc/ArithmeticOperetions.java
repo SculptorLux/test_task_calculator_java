@@ -12,23 +12,17 @@ public class ArithmeticOperetions {
         int num1 = integerConvert(first_operand);
         int num2 = integerConvert(second_operand);
 
+        if (num1 > 10 || num1 < 1 || num2 > 10 || num2 < 1)
+        {
+            throw new Exception("Входные операнды от 1 до 10 включительно");
+        }
 
-        switch (operator)
-            {
-                case '+':
-                    return num1 + num2;
-                case '-':
-                    return num1 - num2;
-                case '*':
-                    return num1 * num2;
-                case '/':
-                    if (num2 == 0)
-                    {
-                        throw new Exception("Нельзя делить на ноль");
-                    }
-                    return num1 / num2;
-                default:
-                    throw new Exception("Неверный оператор");
-            }
+        return switch (operator) {
+            case '+' -> num1 + num2;
+            case '-' -> num1 - num2;
+            case '*' -> num1 * num2;
+            case '/' -> num1 / num2;
+            default -> throw new Exception("Неверный оператор");
+        };
     }
 }
