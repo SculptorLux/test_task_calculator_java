@@ -1,6 +1,6 @@
 package calc;
 
-public class ArithmeticOperetions {
+public class ArithmeticOperations {
     public static int integerConvert(String operand)
     {
         return Integer.parseInt(operand);
