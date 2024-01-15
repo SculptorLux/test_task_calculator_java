@@ -3,7 +3,6 @@ package calc;
 
 public class Main
 {
-    //Реализуем главный метод calc
     public static String calc(String input) throws Exception
     {
         InputCheck.stringsSplit(input);

@@ -1,6 +1,6 @@
 package calc;
 
-public class ArithmeticOperations {
+class ArithmeticOperations {
 
     public static String calculate(String first_operand, String second_operand, char operator) throws Exception
     {

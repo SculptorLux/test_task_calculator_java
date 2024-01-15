@@ -3,7 +3,7 @@ package calc;
 
 import java.util.TreeMap;
 
-public class RomanConverter
+class RomanConverter
 {
 
     public static TreeMap<Character, Integer> romanMap = new TreeMap<>();

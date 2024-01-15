@@ -1,7 +1,7 @@
 package calc;
 
 
-public class InputCheck {
+class InputCheck {
     public static String firstInt;
     public static String secondInt;
     public static char operator;

@@ -2,7 +2,7 @@ package calc;
 
 import java.util.Scanner;
 
-public class UserInterface {
+class UserInterface {
     public static void main(String[] args) throws Exception
     {
         System.out.println("Введите выражение");
