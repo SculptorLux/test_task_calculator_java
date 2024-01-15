@@ -7,13 +7,12 @@ public class Main
     public static String calc(String input) throws Exception
     {
         InputCheck.stringsSplit(input);
-        return Integer.toString(ArithmeticOperations.calculate
+        return ArithmeticOperations.calculate
                 (
                 InputCheck.firstInt,
                 InputCheck.secondInt,
                 InputCheck.operator
-                )
-        );
+                );
     }
 }
 
