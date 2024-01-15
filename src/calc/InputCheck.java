@@ -26,9 +26,5 @@ public class InputCheck {
                 break;
             }
         }
-
-        if (operator == 0) {
-            throw new Exception("Неправильный знак выражения");
-        }
     }
 }
