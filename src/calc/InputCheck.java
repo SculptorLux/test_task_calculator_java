@@ -10,9 +10,12 @@ class InputCheck {
     public static void stringsSplit(String string) throws Exception
     {
         String[] strings = string.split("[+-/*]");
-        if (strings.length != 2)
+        if (strings.length < 2)
         {
-            throw new Exception("Неверный ввод - максимум 2 операнда");
+            throw new Exception("т.к. строка не является математической операцией");
+        } else if (strings.length > 2)
+        {
+            throw new Exception("т.к. формат математической операции не удовлетворяет заданию - два операнда и один оператор (+, -, /, *)");
         }
 
         firstInt = strings[0].trim();
