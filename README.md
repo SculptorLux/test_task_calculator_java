@@ -1,1 +1,1 @@
-# test_task_calculator_java by Александр Анисин
+# test_task_calculator_java
